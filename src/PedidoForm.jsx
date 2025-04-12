@@ -5,7 +5,7 @@ const PedidoForm = ({ onPedidoAgregado }) => {
     const [pedido, setPedido] = useState('');
 
     const enviarPedido = async () => {
-        const response = await fetch('https://backend-pedidos-sigma.vercel.app/', {
+        const response = await fetch('backend-pedidos-fyq29uslh-enzo-aguinos-projects.vercel.app', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ nombre, pedido }),
