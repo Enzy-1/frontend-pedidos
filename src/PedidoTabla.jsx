@@ -4,7 +4,7 @@ const PedidoTabla = () => {
     const [pedidos, setPedidos] = useState([]);
 
     const cargarPedidos = async () => {
-        const response = await fetch('backend-pedidos-fyq29uslh-enzo-aguinos-projects.vercel.app');
+        const response = await fetch('https://backend-pedidos-sigma.vercel.app/');
         const data = await response.json();
         setPedidos(data);
     };
