@@ -4,7 +4,7 @@ const PedidoTabla = () => {
     const [pedidos, setPedidos] = useState([]);
 
     const cargarPedidos = async () => {
-        const response = await fetch('https://20251-calculadora-back.vercel.app/api/ventas');
+        const response = await fetch('https://backend-pedidos-sigma.vercel.app/');
         const data = await response.json();
         setPedidos(data);
     };
